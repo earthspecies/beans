@@ -1,0 +1,11 @@
+kaggle==1.5.12
+librosa==0.9.2
+memoization==0.4.0
+pandas==1.4.3
+plumbum==1.7.2
+pytest==7.1.2
+pyyaml==6.0
+resampy==0.3.1
+scikit-learn==1.1.1
+tqdm==4.64.0
+xgboost==1.6.1

@@ -1,0 +1,136 @@
+- name: esc50
+  type: classification
+  train_data: data/esc50/meta/esc50.train.csv
+  valid_data: data/esc50/meta/esc50.valid.csv
+  test_data: data/esc50/meta/esc50.test.csv
+  num_labels: 50
+  labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
+  unknown_label: null
+  sample_rate: 44100
+  max_duration: 5
+
+- name: speech-commands
+  type: classification
+  train_data: data/speech_commands/train.csv
+  valid_data: data/speech_commands/valid.csv
+  test_data: data/speech_commands/test.csv
+  num_labels: 35
+  labels: ["backward", "bed", "bird", "cat", "dog", "down", "eight", "five", "follow", "forward", "four", "go", "happy", "house", "learn", "left", "marvin", "nine", "no", "off", "on", "one", "right", "seven", "sheila", "six", "stop", "three", "tree", "two", "up", "visual", "wow", "yes", "zero"]
+  unknown_label: null
+  sample_rate: 16000
+  max_duration: 1
+
+- name: watkins
+  type: classification
+  train_data: data/watkins/annotations.train.csv
+  valid_data: data/watkins/annotations.valid.csv
+  test_data: data/watkins/annotations.test.csv
+  num_labels: 31
+  labels: ["Clymene_Dolphin", "Bottlenose_Dolphin", "Spinner_Dolphin", "Beluga,_White_Whale", "Bearded_Seal", "Minke_Whale", "Humpback_Whale", "Southern_Right_Whale", "White-sided_Dolphin", "Narwhal", "White-beaked_Dolphin", "Northern_Right_Whale", "Frasers_Dolphin", "Grampus,_Rissos_Dolphin", "Harp_Seal", "Atlantic_Spotted_Dolphin", "Fin,_Finback_Whale", "Ross_Seal", "Rough-Toothed_Dolphin", "Killer_Whale", "Pantropical_Spotted_Dolphin", "Short-Finned_Pacific_Pilot_Whale", "Bowhead_Whale", "False_Killer_Whale", "Melon_Headed_Whale", "Long-Finned_Pilot_Whale", "Striped_Dolphin", "Leopard_Seal", "Walrus", "Sperm_Whale", "Common_Dolphin"]
+  unknown_label: null
+  sample_rate: 44100
+  max_duration: 3
+
+- name: bats
+  type: classification
+  train_data: data/egyptian_fruit_bats/annotations.train.csv
+  valid_data: data/egyptian_fruit_bats/annotations.valid.csv
+  test_data: data/egyptian_fruit_bats/annotations.test.csv
+  num_labels: 10
+  labels: [111, 210, 211, 215, 216, 220, 226, 228, 230, 231]
+  unknown_label: null
+  sample_rate: 250000
+  max_duration: 5
+
+- name: cbi
+  type: classification
+  train_data: data/cbi/annotations.train.csv
+  valid_data: data/cbi/annotations.valid.csv
+  test_data: data/cbi/annotations.test.csv
+  num_labels: 264
+  labels: ["aldfly", "ameavo", "amebit", "amecro", "amegfi", "amekes", "amepip", "amered", "amerob", "amewig", "amewoo", "amtspa", "annhum", "astfly", "baisan", "baleag", "balori", "banswa", "barswa", "bawwar", "belkin1", "belspa2", "bewwre", "bkbcuc", "bkbmag1", "bkbwar", "bkcchi", "bkchum", "bkhgro", "bkpwar", "bktspa", "blkpho", "blugrb1", "blujay", "bnhcow", "boboli", "bongul", "brdowl", "brebla", "brespa", "brncre", "brnthr", "brthum", "brwhaw", "btbwar", "btnwar", "btywar", "buffle", "buggna", "buhvir", "bulori", "bushti", "buwtea", "buwwar", "cacwre", "calgul", "calqua", "camwar", "cangoo", "canwar", "canwre", "carwre", "casfin", "caster1", "casvir", "cedwax", "chispa", "chiswi", "chswar", "chukar", "clanut", "cliswa", "comgol", "comgra", "comloo", "commer", "comnig", "comrav", "comred", "comter", "comyel", "coohaw", "coshum", "cowscj1", "daejun", "doccor", "dowwoo", "dusfly", "eargre", "easblu", "easkin", "easmea", "easpho", "eastow", "eawpew", "eucdov", "eursta", "evegro", "fiespa", "fiscro", "foxspa", "gadwal", "gcrfin", "gnttow", "gnwtea", "gockin", "gocspa", "goleag", "grbher3", "grcfly", "greegr", "greroa", "greyel", "grhowl", "grnher", "grtgra", "grycat", "gryfly", "haiwoo", "hamfly", "hergul", "herthr", "hoomer", "hoowar", "horgre", "horlar", "houfin", "houspa", "houwre", "indbun", "juntit1", "killde", "labwoo", "larspa", "lazbun", "leabit", "leafly", "leasan", "lecthr", "lesgol", "lesnig", "lesyel", "lewwoo", "linspa", "lobcur", "lobdow", "logshr", "lotduc", "louwat", "macwar", "magwar", "mallar3", "marwre", "merlin", "moublu", "mouchi", "moudov", "norcar", "norfli", "norhar2", "normoc", "norpar", "norpin", "norsho", "norwat", "nrwswa", "nutwoo", "olsfly", "orcwar", "osprey", "ovenbi1", "palwar", "pasfly", "pecsan", "perfal", "phaino", "pibgre", "pilwoo", "pingro", "pinjay", "pinsis", "pinwar", "plsvir", "prawar", "purfin", "pygnut", "rebmer", "rebnut", "rebsap", "rebwoo", "redcro", "redhea", "reevir1", "renpha", "reshaw", "rethaw", "rewbla", "ribgul", "rinduc", "robgro", "rocpig", "rocwre", "rthhum", "ruckin", "rudduc", "rufgro", "rufhum", "rusbla", "sagspa1", "sagthr", "savspa", "saypho", "scatan", "scoori", "semplo", "semsan", "sheowl", "shshaw", "snobun", "snogoo", "solsan", "sonspa", "sora", "sposan", "spotow", "stejay", "swahaw", "swaspa", "swathr", "treswa", "truswa", "tuftit", "tunswa", "veery", "vesspa", "vigswa", "warvir", "wesblu", "wesgre", "weskin", "wesmea", "wessan", "westan", "wewpew", "whbnut", "whcspa", "whfibi", "whtspa", "whtswi", "wilfly", "wilsni1", "wiltur", "winwre3", "wlswar", "wooduc", "wooscj2", "woothr", "y00475", "yebfly", "yebsap", "yehbla", "yelwar", "yerwar", "yetvir"]
+  unknown_label: null
+  sample_rate: 44100
+  max_duration: 10
+
+- name: dogs
+  type: classification
+  train_data: data/dogs/annotations.train.csv
+  valid_data: data/dogs/annotations.valid.csv
+  test_data: data/dogs/annotations.test.csv
+  num_labels: 10
+  labels: ["Farley", "Freid", "Keri", "Louie", "Luke", "Mac", "Roodie", "Rudy", "Siggy", "Zoe"]
+  unknown_label: null
+  sample_rate: 44100
+  max_duration: 10
+
+- name: humbugdb
+  type: classification
+  train_data: data/HumBugDB/data/metadata/train.csv
+  valid_data: data/HumBugDB/data/metadata/valid.csv
+  test_data: data/HumBugDB/data/metadata/test.csv
+  num_labels: 14
+  labels: ["non-mosquito", "an arabiensis", "others", "an gambiae ss", "culex quinquefasciatus", "culex pipiens complex", "an funestus ss", "an squamosus", "ma uniformis", "an dirus", "ae aegypti", "an harrisoni", "an maculatus", "an funestus sl"]
+  unknown_label: null
+  sample_rate: 44100
+  max_duration: 3
+
+- name: dcase
+  type: detection
+  train_data: data/dcase/train.jsonl
+  valid_data: data/dcase/valid.jsonl
+  test_data: data/dcase/test.jsonl
+  num_labels: 18
+  labels: ["AMRE", "BBWA", "BTBW", "CALL", "CCMK", "CHSP", "COYE", "GCTH", "GIG", "GRN", "OVEN", "Q", "RBGR", "SAVS", "SNMK", "SQT", "SWTH", "WTSP"]
+  unknown_label: null
+  sample_rate: 16000
+  window_width: 2
+  window_shift: 1
+
+- name: enabirds
+  type: detection
+  train_data: data/enabirds/train.jsonl
+  valid_data: data/enabirds/valid.jsonl
+  test_data: data/enabirds/test.jsonl
+  num_labels: 34
+  labels: ["AMCR", "AMGO", "AMRE", "AMRO", "BAWW", "BCCH", "BGGN", "BHCO", "BHVI", "BLJA", "BTNW", "BWWA", "CARW", "COYE", "EATO", "HETH", "HOWA", "KEWA", "LOWA", "NOCA", "NOFL", "OVEN", "RBGR", "RBWO", "RCKI", "REVI", "SCTA", "SWTH", "TUTI", "WBNU", "WITU", "WOTH", "YBCU", "OTHR"]
+  unknown_label: "OTHR"
+  sample_rate: 32000
+  window_width: 2
+  window_shift: 1
+
+- name: hiceas
+  type: detection
+  train_data: data/hiceas/train.jsonl
+  valid_data: data/hiceas/valid.jsonl
+  test_data: data/hiceas/test.jsonl
+  num_labels: 1
+  labels: [1]
+  unknown_label: null
+  sample_rate: 22050
+  window_width: 10
+  window_shift: 5
+
+- name: rfcx
+  type: detection
+  train_data: data/rfcx/train.jsonl
+  valid_data: data/rfcx/valid.jsonl
+  test_data: data/rfcx/test.jsonl
+  num_labels: 24
+  labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+  unknown_label: null
+  sample_rate: 48000
+  window_width: 10
+  window_shift: 5
+
+- name: hainan-gibbons
+  type: detection
+  train_data: data/hainan_gibbons/train.jsonl
+  valid_data: data/hainan_gibbons/valid.jsonl
+  test_data: data/hainan_gibbons/test.jsonl
+  num_labels: 3
+  labels: [1, 2, 3]
+  unknown_label: 1
+  sample_rate: 9600
+  window_width: 4
+  window_shift: 2
