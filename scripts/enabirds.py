@@ -11,10 +11,10 @@ CHUNK_SIZE = 60     # in seconds
 TARGET_SAMPLE_RATE = 32_000
 
 local['mkdir']['-p', 'data/enabirds/wav']()
-local['wget']['https://datadryad.org/stash/downloads/file_stream/641808', '-O', 'data/enabirds/wav_Files.zip'] & FG
+local['wget']['https://storage.googleapis.com/ml-bioacoustics-datasets/enabirds_wav.zip', '-O', 'data/enabirds/wav_Files.zip'] & FG
 local['unzip']['data/enabirds/wav_Files.zip', '-d', 'data/enabirds/'] & FG
 
-local['wget']['https://datadryad.org/stash/downloads/file_stream/641805', '-O', 'data/enabirds/annotation_Files.zip'] & FG
+local['wget']['https://storage.googleapis.com/ml-bioacoustics-datasets/enabirds_annotation.zip', '-O', 'data/enabirds/annotation_Files.zip'] & FG
 local['unzip']['data/enabirds/annotation_Files.zip', '-d', 'data/enabirds/'] & FG
 
 def get_split(chunk_id, total_num_chunks):

@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from plumbum import local, FG
 
 local['mkdir']['-p', 'data/egyptian_fruit_bats']()
-local['wget']['https://archive.org/download/egyptian_fruit_bats_10k/egyptian_fruit_bats.zip', '-P', 'data/egyptian_fruit_bats'] & FG
+local['wget']['https://storage.googleapis.com/ml-bioacoustics-datasets/egyptian_fruit_bats.zip', '-P', 'data/egyptian_fruit_bats'] & FG
 local['unzip']['data/egyptian_fruit_bats/egyptian_fruit_bats.zip', '-d', 'data/egyptian_fruit_bats/'] & FG
 
 df = pd.read_csv('data/egyptian_fruit_bats/annotations.csv')

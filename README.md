@@ -11,7 +11,7 @@ This repository contains the code for downloading the datasets and running the b
 1. Create a conda environment
 
 ```
-conda create -n beans python=3.8 pytorch cudatoolkit=11.3 torchvision torchaudio cudnn -c pytorch -c conda-forge
+conda create -n beans python=3.8 pytorch==1.12.1 cudatoolkit=11.3 torchvision torchaudio cudnn -c pytorch -c conda-forge
 ```
 
 2. Install the dependencies and the benchmark itself

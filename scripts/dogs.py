@@ -5,7 +5,7 @@ from pathlib import Path
 from sklearn.model_selection import train_test_split
 
 local['mkdir']['-p', 'data/dogs/wav']()
-local['wget']['-O', 'data/dogs/dog_barks.zip', 'https://archive.org/download/dog_barks/dog_barks.zip'] & FG
+local['wget']['-O', 'data/dogs/dog_barks.zip', 'https://storage.googleapis.com/ml-bioacoustics-datasets/dog_barks.zip'] & FG
 local['unzip']['data/dogs/dog_barks.zip', '-d', 'data/dogs/'] & FG
 
 df = pd.read_csv('data/dogs/annotations.csv')
