@@ -38,6 +38,8 @@ scripts/download_data.sh
 
 If the data download and validation finish successfully, you'll see a `Validation succeeded!` message.
 
+Note: We verified that this setup works with SoX v14.4.2 on Ubuntu 20.04.6 LTS, torch==1.12.1, and torchaudio==0.12.1. If you encounter any validation issues, please check your software versions.
+
 ## Running the benchmark
 
 You can run all the baseline models by running:
